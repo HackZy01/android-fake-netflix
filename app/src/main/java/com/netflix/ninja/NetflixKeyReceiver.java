@@ -10,11 +10,11 @@ public class NetflixKeyReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Intent launchIntent = context.getPackageManager().getLaunchIntentForPackage("com.plexapp.android");
+        Intent launchIntent = context.getPackageManager().getLaunchIntentForPackage("com.streamio.one");
         if (launchIntent != null) {
             context.startActivity(launchIntent);
         } else {
-            Toast.makeText(context, "Unable to launch Plex!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Unable to launch Stremio", Toast.LENGTH_SHORT).show();
         }
     }
 }
