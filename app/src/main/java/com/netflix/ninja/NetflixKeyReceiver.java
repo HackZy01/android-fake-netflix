@@ -10,7 +10,7 @@ public class NetflixKeyReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Intent launchIntent = context.getPackageManager().getLaunchIntentForPackage("com.streamio.one");
+        Intent launchIntent = context.getPackageManager().getLaunchIntentForPackage("com.stremio.one");
         if (launchIntent != null) {
             context.startActivity(launchIntent);
         } else {
